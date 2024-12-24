@@ -36,11 +36,6 @@ def initiate_db():
             )
         ''')
 
-    # cursor_db_users.execute('''INSERT INTO Users (username, email, age, balance) VALUES (?, ?, ?, ?)''',
-    #     ('Artem', 'example1@gmail.com', 37, 1000))
-    # cursor_db_users.execute('''INSERT INTO Users (username, email, age, balance) VALUES (?, ?, ?, ?)''',
-    #     ('Anna', 'example2@gmail.com', 18, 1000))
-
     db_users.commit()
     db_users.close()
 
@@ -78,4 +73,3 @@ def add_user(username, email, age, balance):
 if __name__ == '__main__':
     initiate_db()
     print(get_all_products())
-    # print(is_included('Alex'))
